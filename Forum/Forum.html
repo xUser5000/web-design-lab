@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="favicon" rel="shortcut icon" href="./images/icon.ico">
+    <title>Contest - Virtual Judge</title>
+    <style>
+        body {
+            background-image: url(./images/body.png);
+            font-family: sans-serif;
+            font-size: small;
+        }
+
+        ul {
+            list-style: none;
+            display: inline-block;
+            width: 50%;
+            margin-left: 0px
+        }
+
+        li {
+            padding: 5px;
+            border: 1px solid #ddd;
+            width: 161px;
+            padding: .75rem 1.25rem;
+            background-color: white;
+            margin-left: 0px;
+        }
+
+
+        .left .article {
+            background-color: #0275d8;
+            border: 2px solid #0275d8;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0275d8;
+        }
+
+        a:hover,
+        .left .leftt:hover {
+            color: #06559b;
+        }
+
+        .left .starred {
+            margin-top: 30px;
+        }
+
+        .left .article,
+        .left .starred {
+            border-top-left-radius: .1cm;
+            border-top-right-radius: .1cm;
+        }
+
+        .left .all,
+        .left .google-group {
+            border-bottom-left-radius: .1cm;
+            border-bottom-right-radius: .1cm;
+        }
+
+        .left .adhoc,
+        .left .google-group {
+            background-color: #c4e3f3;
+            color: #31708f;
+        }
+
+        .left li:hover {
+            text-decoration: underline;
+        }
+
+        .left .selected {
+            color: white;
+        }
+
+        .body {
+            display: inline;
+        }
+
+        .left {
+            float: left;
+            width: 17%;
+            margin-top: 25px;
+        }
+
+        .right {
+            margin-top: 50px;
+            width: 80%;
+            float: left;
+        }
+
+        tr,
+        td {
+            border: px solid #eceeef;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .right .top {
+            height: 70px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dedede;
+        }
+
+        th {
+            background-color: #fff;
+            border-bottom: 2px solid #eceeef;
+            border-top: 1px solid #ECEEE4;
+        }
+
+        table {
+            width: 1250px;
+            font-weight: bold;
+        }
+
+        .text {
+            width: 800px;
+            height: 20px;
+            margin-bottom: 8px;
+        }
+
+        .temp {
+            width: 20px;
+        }
+
+        .tt {
+            color: #0275d8;
+            text-align: left;
+        }
+
+        span {
+            color: gray;
+            font-weight: 100;
+        }
+
+        .right .lastby {
+            color: #0275d8;
+        }
+
+        .adhoc:hover,
+        .google-group:hover {
+            background-color: #b4d5e6;
+        }
+
+        .adhoc a,
+        .google-group a {
+            color: #31708f;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        nav here!!!!!!!!!
+    </div>
+    <div class="body">
+        <div class="left">
+            <ul class="leftt">
+                <li class="article"><a class="selected" href="./Forum.html">Article</a></li>
+                <li class="problem"><a href="">Problem</a></li>
+                <li class="sourse"><a href="">Source</a></li>
+                <li class="contest"><a href="">Contest</a></li>
+                <li class="all"><a href="">All</a></li>
+                <li class="starred"><a href="">Starred</a></li>
+                <li class="involoved"><a href="">Involved</a></li>
+                <li class="adhoc"><a href="https://vjudge.net/comment#category=adhoc&title=">Adhoc</a></li>
+                <li class="google-group"><a href="https://groups.google.com/g/virtual-judge?pli=1"
+                        target="-blank">Google Group</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <table>
+                <tr class="top">
+                    <th class="temp"> </th>
+                    <th>Title
+                        <br>
+                        <input class="text" type="text">
+                        <br>
+                    </th>
+                    <th>Comments</th>
+                    <th>Last by</th>
+                </tr>
+                <tr>
+                    <td> </td>
+                    <td class="tt">为什么一直submit failed 啊？
+                        <br>
+                        <span>为什么poj也不能用了？？
+                    </td>
+                    <td class="comments">2</td>
+                    <td class="lastby">changyouren
+                        <br>
+                        <span>7 days ago
+                    </td>
+                </tr>
+                <tr>
+                    <td> </td>
+                    <td class="tt">挑战程序设计竞赛（第二版）题单
+                        <br>
+                        <span>How this problem-set is different from this
+                            [挑战程序设计竞赛（第二版）题集](https://vjudge.net/article/46) ?!
+                    </td>
+                    <td class="comments">6</td>
+                    <td class="lastby">pangjac
+                        <br>
+                        <span>9 days ago
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="tt">vjudge能不能资瓷一下Timus啊
+                        <br>
+                        <span>URAL 就是
+                    </td>
+                    <td class="comments">1</td>
+                    <td class="lastby">Isun
+                        <br>
+                        <span>12 days ago
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td class="tt">hdu没了？
+                        <br>
+                        <span>我超，这wzy也太离谱了
+                    </td>
+                    <td class="comments">2</td>
+                    <td class="lastby">6017202327
+                        <br>
+                        <span>14 days ago
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="tt">codeforces上的一个题单（简化版）
+                        <br>
+                        <span>marked
+                    </td>
+                    <td class="comments">37</td>
+                    <td class="lastby">xinzui
+                        <br>
+                        <span>15 days ago
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="tt">[kuangbin]各种各样的题单(去重后)
+                        <br>
+                        <span>cocailonditconbamay
+                    </td>
+                    <td class="comments">403</td>
+                    <td class="lastby">datvp12345
+                        <br>
+                        <span>15 days ago
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="tt">datvp12345
+                        <br>
+                        <span>https://vjudge.d0j1a1701.cc/
+                    </td>
+                    <td class="comments">3</td>
+                    <td class="lastby">dajia_1701
+                        <br>
+                        <span>16 days ago
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="tt">为什么一直submit failed 啊？
+                        <br>
+                        <span>为什么poj也不能用了？？
+                    </td>
+                    <td class="comments">2</td>
+                    <td class="lastby">changyouren
+                        <br>
+                        <span>7 days ago
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="tt">挑战程序设计竞赛（第二版）题单
+                        <br>
+                        <span>How this problem-set is different from this
+                            [挑战程序设计竞赛（第二版）题集](https://vjudge.net/article/46) ?!
+                    </td>
+                    <td class="comments">6</td>
+                    <td class="lastby">pangjac
+                        <br>
+                        <span>9 days ago
+                    </td>
+                </tr>
+                <tr style="height: 50%;">
+                    <td></td>
+                    <td class="tt">vjudge能不能资瓷一下Timus啊
+                        <br>
+                        <span>URAL 就是
+                    </td>
+                    <td class="comments">1</td>
+                    <td class="lastby">Isun
+                        <br>
+                        <span>12 days ago
+                    </td>
+                </tr>
+
+                <tr style="height: 50%;">
+                    <td></td>
+                    <td class="tt">hdu没了？
+                        <br>
+                        <span>我超，这wzy也太离谱了
+                    </td>
+                    <td class="comments">2</td>
+                    <td class="lastby">6017202327
+                        <br>
+                        <span>14 days ago
+                    </td>
+                </tr>
+                <tr style="height: 50%;">
+                    <td></td>
+                    <td class="tt">codeforces上的一个题单（简化版）
+                        <br>
+                        <span>marked
+                    </td>
+                    <td class="comments">37</td>
+                    <td class="lastby">xinzui
+                        <br>
+                        <span>15 days ago
+                    </td>
+                </tr>
+                <tr style="height: 50%;">
+                    <td></td>
+                    <td class="tt">[kuangbin]各种各样的题单(去重后)
+                        <br>
+                        <span>cocailonditconbamay
+                    </td>
+                    <td class="comments">403</td>
+                    <td class="lastby">datvp12345
+                        <br>
+                        <span>15 days ago
+                    </td>
+                </tr>
+                <tr style="height: 50%;">
+                    <td></td>
+                    <td class="tt">datvp12345
+                        <br>
+                        <span>https://vjudge.d0j1a1701.cc/
+                    </td>
+                    <td class="comments">3</td>
+                    <td class="lastby">dajia_1701
+                        <br>
+                        <span>16 days ago
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="tt">为什么一直submit failed 啊？
+                        <br>
+                        <span>为什么poj也不能用了？？
+                    </td>
+                    <td class="comments">2</td>
+                    <td class="lastby">changyouren
+                        <br>
+                        <span>7 days ago
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="tt">挑战程序设计竞赛（第二版）题单
+                        <br>
+                        <span>How this problem-set is different from this
+                            [挑战程序设计竞赛（第二版）题集](https://vjudge.net/article/46) ?!
+                    </td>
+                    <td class="comments">6</td>
+                    <td class="lastby">pangjac
+                        <br>
+                        <span>9 days ago
+                    </td>
+                </tr>
+                <tr style="height: 50%;">
+                    <td></td>
+                    <td class="tt">vjudge能不能资瓷一下Timus啊
+                        <br>
+                        <span>URAL 就是
+                    </td>
+                    <td class="comments">1</td>
+                    <td class="lastby">Isun
+                        <br>
+                        <span>12 days ago
+                    </td>
+                </tr>
+
+                <tr style="height: 50%;">
+                    <td></td>
+                    <td class="tt">hdu没了？
+                        <br>
+                        <span>我超，这wzy也太离谱了
+                    </td>
+                    <td class="comments">2</td>
+                    <td class="lastby">6017202327
+                        <br>
+                        <span>14 days ago
+                    </td>
+                </tr>
+                <tr style="height: 50%;">
+                    <td></td>
+                    <td class="tt">codeforces上的一个题单（简化版）
+                        <br>
+                        <span>marked
+                    </td>
+                    <td class="comments">37</td>
+                    <td class="lastby">xinzui
+                        <br>
+                        <span>15 days ago
+                    </td>
+                </tr>
+                <tr style="height: 50%;">
+                    <td></td>
+                    <td class="tt">[kuangbin]各种各样的题单(去重后)
+                        <br>
+                        <span>cocailonditconbamay
+                    </td>
+                    <td class="comments">403</td>
+                    <td class="lastby">datvp12345
+                        <br>
+                        <span>15 days ago
+                    </td>
+                </tr>
+                <tr style="height: 50%;">
+                    <td></td>
+                    <td class="tt">datvp12345
+                        <br>
+                        <span>https://vjudge.d0j1a1701.cc/
+                    </td>
+                    <td class="comments">3</td>
+                    <td class="lastby">dajia_1701
+                        <br>
+                        <span>16 days ago
+                    </td>
+                </tr>
+            </table>
+            <div class="footer" style="text-align: center;">
+                footer here !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="favicon" rel="shortcut icon" href="./images/icon.ico">
+    <title>Contest - Virtual Judge</title>
+    <style>
+        body {
+            background-image: url(./images/body.png);
+            font-family: sans-serif;
+            font-size: small;
+        }
+
+        ul {
+            list-style: none;
+            display: inline-block;
+            width: 50%;
+        }
+
+        li {
+            padding: 5px;
+            border: 1px solid #ddd;
+            width: 161px;
+            padding: .75rem 1.25rem;
+        }
+
+        .all {
+            background-color: white;
+            color: #0275d8;
+            border-top-left-radius: .1cm;
+            border-top-right-radius: .1cm;
+        }
+
+        .scheduled {
+            background-color: #d9edf7;
+            color: #31708f;
+        }
+
+        .running {
+            background-color: #f2dede;
+            color: #a94442;
+        }
+
+        .ended {
+            background-color: #dff0d8;
+            color: #3c763d;
+        }
+
+        .all-contest {
+            color: #0275d8;
+            background-color: white;
+            border-top-left-radius: .1cm;
+            border-top-right-radius: .1cm;
+            margin: 5px 0px;
+        }
+
+        .classical {
+            color: #0275d8;
+            background-color: white;
+            border-top-left-radius: .1cm;
+            border-top-right-radius: .1cm;
+        }
+
+        .group {
+            color: #0275d8;
+            background-color: white;
+        }
+
+        .replay {
+            color: #0275d8;
+            background-color: white;
+            border-bottom-left-radius: .1cm;
+            border-bottom-right-radius: .1cm;
+        }
+
+        li:hover {
+            text-decoration: underline;
+        }
+
+        .left {
+            float: left;
+            width: 17%;
+            margin-top: 25px;
+        }
+
+        .right {
+            margin-top: 50px;
+            width: 80%;
+            float: left;
+        }
+
+        tr,
+        td {
+            border: px solid #eceeef;
+            text-align: center;
+            padding: 10px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dedede;
+        }
+
+        th {
+            background-color: #fff;
+            border-bottom: 2px solid #eceeef;
+            border-top: 1px solid #ECEEE4;
+        }
+
+        table {
+            width: 1200px;
+            font-weight: bold;
+        }
+
+
+
+        .text {
+            width: 500px;
+            height: 20px;
+            margin-bottom: 8px;
+        }
+
+        .owner {
+            height: 20px;
+            margin-bottom: 8px;
+        }
+
+        .title {
+            padding: 10px;
+        }
+
+        .tt,
+        .ow {
+            text-align: left;
+            color: #0275d8;
+        }
+
+        .BT {
+            color: green;
+        }
+
+        .left .scheduled:hover {
+            background-color: #9dcae2;
+        }
+
+        .left .running:hover {
+            background-color: #d8adad;
+        }
+
+        .left .ended:hover {
+            background-color: #bdd4b5;
+        }
+
+        .left .all,
+        .left .all-contest {
+            background-color: #0275d8;
+            border: 2px solid #0275d8;
+        }
+
+        .left .selected {
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .tt:hover,
+        .ow:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        nav here!!!!!!!!!
+    </div>
+    <div class="left">
+        <ul class="left">
+            <li class="all"><a class="selected" href="./index.html">All</a></li>
+            <li class="scheduled"><a href="./scheduled.html">Scheduled</a></li>
+            <li class="running"><a href="./running.html">Running</a></li>
+            <li class="ended"><a href="./ended.html">Ended</a></li>
+            <li class="all-contest"><a class="selected" href="">All Contest</a></li>
+            <li class="classical"><img src="./images/classical.gif" width="14" height="14"><a href=""> Classical</a>
+            </li>
+            <li class="group"><img src="./images/group.png" width="14" height="14"><a href=""> Group</a></li>
+            <li class="replay"><img src="./images/replay.png" width="14" height="14"><a href=""> Replay</a></li>
+        </ul>
+    </div>
+    <div class="right">
+        <table>
+            <tr>
+                <th>ID</th>
+                <th style="width: 30px;"> </th>
+                <th class="title">Title
+                    <br>
+                    <input class="text" type="text">
+                    <br>
+                </th>
+                <th></th>
+                <th>Begin Time</th>
+                <th>Length</th>
+                <th class="title">Owner
+                    <br>
+                    <input class="owner" type="text">
+                    <br>
+                </th>
+            </tr>
+            <tr>
+                <td>418207</td>
+                <td></td>
+                <td class="tt">ICPC训练联盟2021寒假冬令营（1）</td>
+                <td>x2197</td>
+                <td class="BT">12 month ago</td>
+                <td>14.5 days</td>
+                <td class="ow"><img class="avatar" src="./images/avatar1.png" width="18px" height="18px"> fdchosen
+                </td>
+            </tr>
+            <tr>
+                <td>418415</td>
+                <td></td>
+                <td class="tt">ICPC训练联盟2021寒假冬令营（2）</td>
+                <td>x1160</td>
+                <td class="BT">12 month ago</td>
+                <td>14.5 days</td>
+                <td class="ow"><img class="avatar" src="./images/avatar1.png" width="18px" height="18px"> fdchosen
+                </td>
+            </tr>
+            <tr>
+                <td>418591</td>
+                <td></td>
+                <td class="tt">ICPC训练联盟2021寒假冬令营（3）</td>
+                <td>x870</td>
+                <td class="BT">12 month ago</td>
+                <td>12.5 days</td>
+                <td class="ow"><img class="avatar" src="./images/avatar1.png" width="18px" height="18px"> fdchosen
+                </td>
+            </tr>
+            <tr>
+                <td>418802</td>
+                <td></td>
+                <td class="tt">ICPC训练联盟2021寒假冬令营（4）</td>
+                <td> x701</td>
+                <td class="BT">12 month ago</td>
+                <td>12.5 days</td>
+                <td class="ow"><img class="avatar" src="./images/avatar1.png" width="18px" height="18px"> fdchosen
+                </td>
+            </tr>
+            <tr>
+                <td>119783</td>
+                <td></td>
+                <td class="tt"> Ramadan Programming Contest 2016 </td>
+                <td>x387</td>
+                <td class="BT">6 years ago</td>
+                <td>2.5 hours</td>
+                <td class="ow"><img class="avatar" src="./images/avatar4.jpeg" width="18px" height="18px"> Megaminds
+                </td>
+            </tr>
+            <tr>
+                <td>419018</td>
+                <td></td>
+                <td class="tt">ICPC训练联盟2021寒假冬令营（5）</td>
+                <td>x600</td>
+                <td class="BT">12 month ago</td>
+                <td>10.3 days</td>
+                <td class="ow"><img class="avatar" src="./images/avatar1.png" width="18px" height="18px"> fdchosen
+                </td>
+            </tr>
+            <tr>
+                <td>152306</td>
+                <td></td>
+                <td class="tt"> ধর্মঘট কনটেস্ট [শুধুমাত্র বাচ্চাদের জন্য] </td>
+                <td>x445</td>
+                <td class="BT">5 years ago</td>
+                <td>3 hours</td>
+                <td class="ow"><img class="avatar" src="./images/avatar3.png" width="18px" height="18px">
+                    pro_problem_bn
+                </td>
+            </tr>
+            <tr>
+                <td>95097</td>
+                <td></td>
+                <td class="tt">smie短码之美10 （2015学年第2学期周赛1 水题泛滥）</td>
+                <td>x558</td>
+                <td class="BT">6 years ago</td>
+                <td>7 days</td>
+                <td class="ow"><img class="avatar" src="./images/avatar2.png" width="18px" height="18px"> guo1</td>
+            </tr>
+            <tr>
+                <td>95100</td>
+                <td></td>
+                <td class="tt">smie短码之美11</td>
+                <td>x522</td>
+                <td class="BT">6 years ago</td>
+                <td>7 days</td>
+                <td class="ow"><img class="avatar" src="./images/avatar2.png" width="18px" height="18px"> guo1</td>
+            </tr>
+            <tr>
+                <td>96035</td>
+                <td></td>
+                <td class="tt"> smie短码之美12(本周结束后计算周赛10、11、12总积分决定本学期第一次月赛人选)</td>
+                <td>x475</td>
+                <td class="BT">6 years ago</td>
+                <td>7 days</td>
+                <td class="ow"><img class="avatar" src="./images/avatar2.png" width="18px" height="18px"> guo1</td>
+            </tr>
+            <tr>
+                <td>119783</td>
+                <td></td>
+                <td class="tt"> Ramadan Programming Contest 2016 </td>
+                <td>x387</td>
+                <td class="BT">6 years ago</td>
+                <td>2.5 hours</td>
+                <td class="ow"><img class="avatar" src="./images/avatar4.jpeg" width="18px" height="18px"> Megaminds
+                </td>
+            </tr>
+            <tr>
+                <td>98071</td>
+                <td></td>
+                <td class="tt"> smie短码之美13</td>
+                <td>x456</td>
+                <td class="BT">6 years ago</td>
+                <td>7 days</td>
+                <td class="ow"><img class="avatar" src="./images/avatar2.png" width="18px" height="18px"> guo1</td>
+            </tr>
+            <tr>
+                <td>95100</td>
+                <td></td>
+                <td class="tt">smie短码之美11</td>
+                <td>x522</td>
+                <td class="BT">6 years ago</td>
+                <td>7 days</td>
+                <td class="ow"><img class="avatar" src="./images/avatar2.png" width="18px" height="18px"> guo1</td>
+            </tr>
+            <tr>
+                <td>418415</td>
+                <td></td>
+                <td class="tt">ICPC训练联盟2021寒假冬令营（2）</td>
+                <td>x1160</td>
+                <td class="BT">12 month ago</td>
+                <td>14.5 days</td>
+                <td class="ow"><img class="avatar" src="./images/avatar1.png" width="18px" height="18px"> fdchosen
+                </td>
+            </tr>
+            <tr>
+                <td>418591</td>
+                <td></td>
+                <td class="tt">ICPC训练联盟2021寒假冬令营（3）</td>
+                <td>x870</td>
+                <td class="BT">12 month ago</td>
+                <td>12.5 days</td>
+                <td class="ow"><img class="avatar" src="./images/avatar1.png" width="18px" height="18px"> fdchosen
+                </td>
+            </tr>
+            <tr>
+                <td>152306</td>
+                <td></td>
+                <td class="tt"> ধর্মঘট কনটেস্ট [শুধুমাত্র বাচ্চাদের জন্য] </td>
+                <td>x445</td>
+                <td class="BT">5 years ago</td>
+                <td>3 hours</td>
+                <td class="ow"><img class="avatar" src="./images/avatar3.png" width="18px" height="18px">
+                    pro_problem_bn
+                </td>
+            </tr>
+            <tr>
+                <td>95100</td>
+                <td></td>
+                <td class="tt">smie短码之美11</td>
+                <td>x522</td>
+                <td class="BT">6 years ago</td>
+                <td>7 days</td>
+                <td class="ow"><img class="avatar" src="./images/avatar2.png" width="18px" height="18px"> guo1</td>
+            </tr>
+            <tr>
+                <td>96035</td>
+                <td></td>
+                <td class="tt"> smie短码之美12(本周结束后计算周赛10、11、12总积分决定本学期第一次月赛人选)</td>
+                <td>x475</td>
+                <td class="BT">6 years ago</td>
+                <td>7 days</td>
+                <td class="ow"><img class="avatar" src="./images/avatar2.png" width="18px" height="18px"> guo1</td>
+            </tr>
+            <tr>
+                <td>119783</td>
+                <td></td>
+                <td class="tt"> Ramadan Programming Contest 2016 </td>
+                <td>x387</td>
+                <td class="BT">6 years ago</td>
+                <td>2.5 hours</td>
+                <td class="ow"><img class="avatar" src="./images/avatar4.jpeg" width="18px" height="18px"> Megaminds
+                </td>
+            </tr>
+            <tr>
+                <td>418415</td>
+                <td></td>
+                <td class="tt">ICPC训练联盟2021寒假冬令营（2）</td>
+                <td>x1160</td>
+                <td class="BT">12 month ago</td>
+                <td>14.5 days</td>
+                <td class="ow"><img class="avatar" src="./images/avatar1.png" width="18px" height="18px"> fdchosen
+                </td>
+            </tr>
+            <tr>
+                <td>418591</td>
+                <td></td>
+                <td class="tt">ICPC训练联盟2021寒假冬令营（3）</td>
+                <td>x870</td>
+                <td class="BT">12 month ago</td>
+                <td>12.5 days</td>
+                <td class="ow"><img class="avatar" src="./images/avatar1.png" width="18px" height="18px"> fdchosen
+                </td>
+            </tr>
+            <tr>
+                <td>418207</td>
+                <td></td>
+                <td class="tt">ICPC训练联盟2021寒假冬令营（1）</td>
+                <td>x2197</td>
+                <td class="BT">12 month ago</td>
+                <td>14.5 days</td>
+                <td class="ow"><img class="avatar" src="./images/avatar1.png" width="18px" height="18px"> fdchosen
+                </td>
+            </tr>
+            <tr>
+                <td>418415</td>
+                <td></td>
+                <td class="tt">ICPC训练联盟2021寒假冬令营（2）</td>
+                <td>x1160</td>
+                <td class="BT">12 month ago</td>
+                <td>14.5 days</td>
+                <td class="ow"><img class="avatar" src="./images/avatar1.png" width="18px" height="18px"> fdchosen
+                </td>
+            </tr>
+            <tr>
+                <td>418591</td>
+                <td></td>
+                <td class="tt">ICPC训练联盟2021寒假冬令营（3）</td>
+                <td>x870</td>
+                <td class="BT">12 month ago</td>
+                <td>12.5 days</td>
+                <td class="ow"><img class="avatar" src="./images/avatar1.png" width="18px" height="18px"> fdchosen
+                </td>
+            </tr>
+            <tr>
+                <td>418802</td>
+                <td></td>
+                <td class="tt">ICPC训练联盟2021寒假冬令营（4）</td>
+                <td> x701</td>
+                <td class="BT">12 month ago</td>
+                <td>12.5 days</td>
+                <td class="ow"><img class="avatar" src="./images/avatar1.png" width="18px" height="18px"> fdchosen
+                </td>
+            </tr>
+            <tr>
+                <td>119783</td>
+                <td></td>
+                <td class="tt"> Ramadan Programming Contest 2016 </td>
+                <td>x387</td>
+                <td class="BT">6 years ago</td>
+                <td>2.5 hours</td>
+                <td class="ow"><img class="avatar" src="./images/avatar4.jpeg" width="18px" height="18px"> Megaminds
+                </td>
+            </tr>
+            <tr>
+                <td>419018</td>
+                <td></td>
+                <td class="tt">ICPC训练联盟2021寒假冬令营（5）</td>
+                <td>x600</td>
+                <td class="BT">12 month ago</td>
+                <td>10.3 days</td>
+                <td class="ow"><img class="avatar" src="./images/avatar1.png" width="18px" height="18px"> fdchosen
+                </td>
+            </tr>
+            <tr>
+                <td>152306</td>
+                <td></td>
+                <td class="tt"> ধর্মঘট কনটেস্ট [শুধুমাত্র বাচ্চাদের জন্য] </td>
+                <td>x445</td>
+                <td class="BT">5 years ago</td>
+                <td>3 hours</td>
+                <td class="ow"><img class="avatar" src="./images/avatar3.png" width="18px" height="18px">
+                    pro_problem_bn
+                </td>
+            </tr>
+            <tr>
+                <td>95097</td>
+                <td></td>
+                <td class="tt">smie短码之美10 （2015学年第2学期周赛1 水题泛滥）</td>
+                <td>x558</td>
+                <td class="BT">6 years ago</td>
+                <td>7 days</td>
+                <td class="ow"><img class="avatar" src="./images/avatar2.png" width="18px" height="18px"> guo1</td>
+            </tr>
+            <tr>
+                <td>95100</td>
+                <td></td>
+                <td class="tt">smie短码之美11</td>
+                <td>x522</td>
+                <td class="BT">6 years ago</td>
+                <td>7 days</td>
+                <td class="ow"><img class="avatar" src="./images/avatar2.png" width="18px" height="18px"> guo1</td>
+            </tr>
+            <tr>
+                <td>419018</td>
+                <td></td>
+                <td class="tt">ICPC训练联盟2021寒假冬令营（5）</td>
+                <td>x600</td>
+                <td class="BT">12 month ago</td>
+                <td>10.3 days</td>
+                <td class="ow"><img class="avatar" src="./images/avatar1.png" width="18px" height="18px"> fdchosen
+                </td>
+            </tr>
+            <tr>
+                <td>152306</td>
+                <td></td>
+                <td class="tt"> ধর্মঘট কনটেস্ট [শুধুমাত্র বাচ্চাদের জন্য] </td>
+                <td>x445</td>
+                <td class="BT">5 years ago</td>
+                <td>3 hours</td>
+                <td class="ow"><img class="avatar" src="./images/avatar3.png" width="18px" height="18px">
+                    pro_problem_bn
+                </td>
+            </tr>
+            <tr>
+                <td>95097</td>
+                <td></td>
+                <td class="tt">smie短码之美10 （2015学年第2学期周赛1 水题泛滥）</td>
+                <td>x558</td>
+                <td class="BT">6 years ago</td>
+                <td>7 days</td>
+                <td class="ow"><img class="avatar" src="./images/avatar2.png" width="18px" height="18px"> guo1</td>
+            </tr>
+            <tr>
+                <td>95100</td>
+                <td></td>
+                <td class="tt">smie短码之美11</td>
+                <td>x522</td>
+                <td class="BT">6 years ago</td>
+                <td>7 days</td>
+                <td class="ow"><img class="avatar" src="./images/avatar2.png" width="18px" height="18px"> guo1</td>
+            </tr>
+            <tr>
+                <td>96035</td>
+                <td></td>
+                <td class="tt"> smie短码之美12(本周结束后计算周赛10、11、12总积分决定本学期第一次月赛人选)</td>
+                <td>x475</td>
+                <td class="BT">6 years ago</td>
+                <td>7 days</td>
+                <td class="ow"><img class="avatar" src="./images/avatar2.png" width="18px" height="18px"> guo1</td>
+            </tr>
+        </table>
+        <div class="footer" style="text-align: center;">
+            footer here !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        </div>
+    </div>
+</body>
+
+</html>
