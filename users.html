@@ -16,14 +16,7 @@
       crossorigin="anonymous"
     ></script>
     <style>
-      nav {
-        width: 100%;
-        height: 57px;
-        background-color: black;
-      }
-      .container {
-        max-width: 98%;
-      }
+      @import url(main.css);
     </style>
     <script>
       function search(id) {
@@ -55,7 +48,51 @@
   </head>
 </html>
 <body class="bg-light">
-  <nav></nav>
+    <nav class="navbar navbar-dark bg-dark" id="top-nav">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+              <img src="./Virtual Judge_files/favicon.ico" height="30">
+              Home
+          </a>
+          <ul class="navbar-nav me-auto list-group-horizontal">
+
+              <li class="nav-item">
+                  <a class="nav-link" href="./problem.html">Problem</a>
+              </li>
+
+              <li class="nav-item">
+                  <a class="nav-link" href="./status.html">Status</a>
+              </li>
+
+              <li class="nav-item">
+                  <a class="nav-link" href="./Forum/index.html">Contest</a>
+              </li>
+
+              <li class="nav-item">
+                  <a class="nav-link" href="./users.html">User</a>
+              </li>
+
+              <li class="nav-item">
+                  <a class="nav-link" href="./group.html">Group</a>
+              </li>
+
+              <li class="nav-item">
+                  <a class="nav-link" href="./Forum/Forum.html">Forum</a>
+              </li>
+
+          </ul>
+          
+          <ul class="navbar-nav list-group-horizontal">
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Login</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Register</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+
   <main class="py-4 px-3">
     <div class="d-inline mr-5">
       <button class="btn btn-link bg-white">Previous</button
@@ -518,4 +555,28 @@
       </tbody>
     </table>
   </main>
+  <footer>
+    <div style="margin-bottom: 8px">
+        <a href="https://t.me/joinchat/Erw7nRGwXN3iSCoKguVW3w" target="_blank">
+            <img src="./Virtual Judge_files/telegram.svg">
+        </a>
+        <a href="https://www.facebook.com/virtualjudge/" target="_blank">
+            <img src="./Virtual Judge_files/facebook.svg">
+        </a>
+        <a href="https://weibo.com/u/5340553087" target="_blank">
+            <img src="./Virtual Judge_files/weibo.svg">
+        </a>
+        <a href="https://groups.google.com/forum/#!forum/virtual-judge" target="_blank">
+            <img src="./Virtual Judge_files/google_bookmark.svg">
+        </a>
+        <a href="https://twitter.com/virtualjudge" target="_blank">
+            <img src="./Virtual Judge_files/twitter.svg">
+        </a>
+        <a href="mailto:is.un@qq.com" target="_blank">
+            <img src="./Virtual Judge_files/email.svg">
+        </a>
+    </div>
+    All Copyright Reserved © 2010-2021 <a href="mailto:is.un@qq.com">Xu Han</a><br>
+    Server Time: <span class="currentTimeTZ">2021-12-21 19:27:06 UTC+2
+</footer>
 </body>
