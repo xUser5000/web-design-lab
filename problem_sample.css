@@ -1,0 +1,98 @@
+body{
+    background-color: rgb(228, 227, 227);
+ }
+label {
+    background-color: rgb(73, 150, 250);
+    color: white;
+    font-family: sans-serif;
+    width: 100px;
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
+.file{
+    background-color: blue;
+}
+button{
+    width: 100px;
+    font-family: sans-serif;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    margin: 5px;
+}
+.buttoms{
+    margin: 50px;
+    padding: 50px;
+    width: 250px;
+}
+.about .A{
+    font-size: large;
+}
+.about{
+    margin: 50px;
+    padding: 50px;
+    width: 400px;
+    height: fit-content;
+    font-size: small;
+    max-width: fit-content;
+    background-color: white;
+}
+
+.v{
+    width: fit-content;
+}
+div a{
+    color: rgb(6, 6, 134);
+}
+.a{
+    background-color:#0275d8;
+    border: 1px solid #0275d8;
+    border-radius: 10%;
+    padding: 12px 20px;
+}
+.decr{
+    margin: 50px;
+    padding: 50px;
+}
+.news{
+    width: 500px;
+    height: 380px;
+    position: absolute;
+    top: 50px;
+    left: 500px;
+}
+.news a{
+    color: black;
+}
+.news p{
+    font-size: x-large;
+    width: 900px;
+    background-color:#ddddf4 ;
+    padding: 20px;
+    margin: 20px;
+    border-radius:3% ;
+}
+.news span{
+    font-size: medium;
+    font-weight: 1000;
+}
+table{
+    background-color: #ddddf4;
+    width: 900px;
+    padding: 20px;
+    margin: 20px;
+    text-align: left;
+    border: solid 1px black;
+}
+tr{
+    background-color: azure;
+}
+textarea{
+    width: 1000px;
+    max-width: 1000px;
+    min-width: 1000px;
+}
+.news input{
+    border-radius: 3%;
+}
+
+
