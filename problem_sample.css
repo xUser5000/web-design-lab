@@ -1,6 +1,5 @@
-body{
-    background-color: rgb(228, 227, 227);
- }
+@import url(main.css);
+
 label {
     background-color: rgb(73, 150, 250);
     color: white;
@@ -12,13 +11,7 @@ label {
 .file{
     background-color: blue;
 }
-button{
-    width: 100px;
-    font-family: sans-serif;
-    margin-top: 1rem;
-    padding: 0.5rem;
-    margin: 5px;
-}
+
 .buttoms{
     margin: 50px;
     padding: 50px;
