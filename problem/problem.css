@@ -1,16 +1,5 @@
-@import url(../nav.css);
+@import url(../main.css);
 
-body{
-   background-color: rgb(228, 227, 227);
-}
-
-
-nav {
-    width: 23%;
-    height: 57px;
-   margin: 5px;
-   padding: 10px;
-  }
 th{
     padding: 25px;
     text-align: center;
