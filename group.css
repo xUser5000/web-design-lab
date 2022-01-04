@@ -1,0 +1,86 @@
+@import url(main.css);
+
+.main {
+    margin-top: 3em;
+}
+
+.main .nav {
+    font-size: 15px;
+    display: inline-block;
+}
+
+.main .nav .nav-item {
+    margin: 0;
+    display: inline-block;
+}
+
+#groups {
+    margin-top: 40px;
+}
+
+.group {
+    display: inline-block;
+    width: 350px;
+    height: 150px;
+    font-size: 15px;
+    display: inline-block;
+    margin: 0 20px 20px 0;
+}
+
+.group > div {
+    height: 100%;
+    display: inline-block;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 3px 3px 6px #888;
+}
+
+.group .left {
+    width: 29%;
+}
+
+.group .right {
+    width: 70%;
+}
+
+.group img {
+    width: 100%;
+    height: 70%;
+    border: 1px solid white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.group .owner {
+    height: 30%;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.group .owner a:hover {
+    text-decoration: underline;
+}
+
+.group .right > div {
+    width: 100%;
+    overflow: hidden;
+}
+
+.group .right .top {
+    background-color: #66b95c;
+    padding: 5px;
+}
+
+.group .right .top a {
+    text-decoration: none;
+    color: white;
+} .group .right .top a:hover {
+    text-decoration: underline;
+}
+
+.group .right .bottom {
+    color: gray;
+    padding: 5px;
+}

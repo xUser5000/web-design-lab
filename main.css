@@ -1,0 +1,35 @@
+body {
+    background-color: #e9e9e9;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-item {
+    margin: 0 20px;
+}
+
+.main {
+    margin: auto;
+    margin-top: 4em;
+    max-width: 1200px;
+}
+
+footer {
+    margin: 50px;
+    text-align: center;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
